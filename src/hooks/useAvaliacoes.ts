@@ -182,7 +182,7 @@ export function useAvaliacoes(uid: string | undefined) {
             idadeDisplay: c[4]?.replace(/^"|"$/g, '').trim() || 'Não informada',
             classe, 
             texto: c[3]?.replace(/^"|"$/g, '').trim() || `${classe === 'baixo' ? 'Baixo' : classe === 'medio' ? 'Médio' : 'Alto'} risco de Paralisia Cerebral`,
-            indice: Number(indice.toFixed(4)), 
+            indice: indice.toFixed(4),
             indiceCombinado: '0',
             data: dataISO, 
             prontuario: '', 
