@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       firebase:
-        specifier: ^10.12.2
+        specifier: ^10.14.1
         version: 10.14.1
       lucide-react:
         specifier: ^0.383.0
