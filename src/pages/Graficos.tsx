@@ -7,7 +7,7 @@ export default function Graficos({avaliacoes}:{avaliacoes:Avaliacao[]}) {
   const total = avaliacoes.length
   if (total===0) return (
     <div className="bg-white rounded-2xl p-7 shadow-sm border border-slate-100 text-center py-20">
-      <div className="text-6xl mb-4 opacity-30">📊</div>
+      <div className="text-6xl mb-4 opacity-30"></div>
       <h3 className="text-slate-600 font-semibold mb-1">Nenhum dado para visualizar</h3>
       <p className="text-slate-400 text-sm">Realize avaliações na aba Calculadora para ver gráficos aqui.</p>
     </div>
@@ -44,7 +44,7 @@ export default function Graficos({avaliacoes}:{avaliacoes:Avaliacao[]}) {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-          <h3 className="font-bold text-slate-900 text-sm mb-5">🥧 Distribuição de Risco</h3>
+          <h3 className="font-bold text-slate-900 text-sm mb-5"> Distribuição de Risco</h3>
           <ResponsiveContainer width="100%" height={220}>
             <PieChart>
               <Pie data={pizza} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={55} outerRadius={85} paddingAngle={3}>
@@ -56,7 +56,7 @@ export default function Graficos({avaliacoes}:{avaliacoes:Avaliacao[]}) {
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-          <h3 className="font-bold text-slate-900 text-sm mb-5">📈 Evolução do Índice (últimas 20)</h3>
+          <h3 className="font-bold text-slate-900 text-sm mb-5"> Evolução do Índice (últimas 20)</h3>
           <ResponsiveContainer width="100%" height={220}>
             <LineChart data={linha}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9"/>
@@ -70,7 +70,7 @@ export default function Graficos({avaliacoes}:{avaliacoes:Avaliacao[]}) {
       </div>
 
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-        <h3 className="font-bold text-slate-900 text-sm mb-5">📊 Índice por Paciente</h3>
+        <h3 className="font-bold text-slate-900 text-sm mb-5"> Índice por Paciente</h3>
         <ResponsiveContainer width="100%" height={200}>
           <BarChart data={barra}>
             <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9"/>
